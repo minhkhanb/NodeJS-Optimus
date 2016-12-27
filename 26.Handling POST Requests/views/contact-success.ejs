@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NodeJS serving HTML Pages</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>Contact Us!</h1>
+    <p>Thanks for getting in touch!</p>
+    <p>You contacted <%= data.who %> in the <%= data.deparment %> department.</p>
+    <p>We will reply to you at <%= data.email %></p>
+
+  </body>
+</html>
