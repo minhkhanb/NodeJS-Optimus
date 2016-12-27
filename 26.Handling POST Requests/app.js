@@ -26,6 +26,7 @@ app.get('/contact', function (req, res) {
 app.post('/contact', urlencodedParser, function (req, res) {
   console.log(req.body);
   res.render('contact-success', {data: req.body});
+  //using npm nodemailer to send mail
 });
 
 app.get('/profile/:name', function (req, res) {
